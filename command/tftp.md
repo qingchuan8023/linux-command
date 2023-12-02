@@ -87,7 +87,7 @@ service xinetd restart
 4、查看tftp服务是否开启
 
 ```shell
-netstat -a | grep tftp
+netstat -au | grep tftp
 ```
 
 显示结果为`udp 0 0 *:tftp *:*`表明服务已经开启，就表明tftp配置成功了。
